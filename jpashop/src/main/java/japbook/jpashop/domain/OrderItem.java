@@ -16,11 +16,11 @@ public class OrderItem {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "item_id")
+    @Column(name = "item_id")
     private Item item;
 
     @ManyToOne
-    @JoinColumn(name = "order_id")
+    @Column(name = "order_id")
     private Order order;
 
     private int orderPrice;

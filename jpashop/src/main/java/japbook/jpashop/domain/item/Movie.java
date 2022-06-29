@@ -7,9 +7,10 @@ import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
-@Getter @Setter
 @DiscriminatorValue("M")
+@Getter @Setter
 public class Movie extends Item{
+
     private String director;
     private String isbn;
 }
